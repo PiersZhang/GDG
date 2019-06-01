@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>animation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      height: 100vh;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      height: 50vh;
+      width: auto;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) rotateY(1turn);
+      }
+    }
+
+    img {
+      animation-name: fadeInDown;
+      animation-duration: 1s;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+      
+      /* 可以缩写为 */
+      /* animation: 1s ease 0s fadeInDown */
+    }
+  </style>
+</head>
+
+<body>
+  <img src="media/image/bee.jpg" alt="" srcset="">
+</body>
+
+</html>

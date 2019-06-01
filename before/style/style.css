@@ -1,0 +1,245 @@
+html, body {
+  font-family: Baskerville, "Times New Roman", "Liberation Serif", STFangsong, FangSong, FangSong_GB2312, "CWTEX\-F", serif;
+  background-color: #073743;
+}
+::selection {
+  background: #2C2D21;
+  color: #EEECED;
+}
+.font-fang-song {
+  font-family: Baskerville, "Times New Roman", "Liberation Serif", STFangsong, FangSong, FangSong_GB2312, "CWTEX\-F", serif;
+}
+.font-song {
+  font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
+}
+.font-kai {
+  font-family: Baskerville, Georgia, "Liberation Serif", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, "TW\-Kai", serif;
+}
+.font-hei {
+  font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+
+.is-fullheight {
+  height: 100vh;
+}
+
+.text-white {
+  color: #EEECED;
+}
+.text-black {
+  color: #2C2D21;
+}
+a {
+  text-decoration: none;
+}
+
+header, nav {
+  color: #EEECED;
+}
+header {
+  background-color: darkslategrey;
+  background-image: url("../media/image/dan-otis.jpg");
+  background-size: cover;
+  background-position: center;
+  /* 添加 css 让背景图片不跟随页面滚动 */
+}
+.logo-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  padding: 24px;
+}
+.logo-container .logo {
+  display: flex;
+  height: 72px;
+  align-items: center;
+  padding-left: 24px;
+}
+.logo-container .logo img{
+  height: 36px;
+  width: auto;
+}
+/* trigger1 */
+#trigger1 {
+  position: absolute;
+  top: calc(150vh - 48px);
+}
+/* nav */
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 30;
+}
+nav .container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px;
+}
+#menu-button {
+  position: relative;
+  pointer-events: bounding-box;
+  display: block;
+  width: 72px;
+  height: 72px;
+  z-index: 100;
+}
+#menu-button div {
+  position: absolute;
+  left: 24px;
+  height: 2px;
+  width: 24px;
+  background-color: rgba(238, 236, 237, 1);
+}
+#menu-button div:nth-child(1) {
+  top: 29px;
+}
+#menu-button div:nth-child(2) {
+  top: 35px;
+}
+#menu-button div:nth-child(3) {
+  top: 41px;
+}
+
+/* menus */
+.menu-container {
+  background: rgba(238,236,237, 0);
+  z-index: 50;
+  padding: 0 96px;
+  display: none;
+}
+
+.menu-container ul {
+  list-style: none;
+  font-size: 5rem;
+}
+.menu-container ul li{
+  padding: .5rem;
+}
+.menu-container ul li a {
+  display: block;
+  position: relative;
+}
+.menu-container ul li a, .menu-container ul li a:link, .menu-container ul li a:visited{
+  color: #2C2D21;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .hero-body {
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+header .hero-foot {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+header h1 {
+  font-size: 15vw;
+  font-weight: bold;
+}
+header p.mysubtitle {
+  font-size: 4.5vw;
+  text-transform: uppercase;
+}
+
+header .scroll-down {
+  width: 72px;
+  margin: 0 auto;
+  display: block;
+  color: #EEECED;
+  font-size: 3rem;
+  transition: all .25s;
+  transform: scale(1);
+}
+header .scroll-down:hover {
+  transform: scale(1.2) translateY(3px);
+}
+@media screen and (min-width: 769px) {
+  header h1 {
+    font-size: 10vw;
+  }
+  header p.mysubtitle {
+    font-size: 3vw;
+  }
+}
+/* product */
+.product {
+  padding: 96px 48px;
+  background: #EEECED;
+}
+
+.product figure {
+  position: relative;
+  overflow: hidden;
+  margin: 24px;
+  margin: 0 auto;
+}
+.product figure img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product .desc {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.product .desc .mycard hr{
+  background-color: rgba(44,45,33, .4);
+  /* width: 10rem; */
+  height: 1px;
+  /* margin: 24px auto; */
+}
+@media screen and (min-width: 1472px) {
+  .product .desc .mycard h3{
+    font-size: 2.5rem;
+  }
+  .product .desc .mycard .mysubtitle{
+    font-size: 1.25rem;
+  }
+}
+.product .desc h3 {
+  font-size: 2rem;
+}
+/* footer */
+footer {
+  text-align: center;
+  background-image: url(../media/image/dan-otis.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 1.5rem 3rem 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+}
+footer .content h4 {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer a:hover {
+  color: #45C983;
+}
+footer .social {
+  margin: 5rem auto;
+}
+footer .social ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+footer .social ul > li {
+  padding: 0 .8rem;
+  margin: 0;
+}
