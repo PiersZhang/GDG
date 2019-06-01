@@ -1,15 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GDG</title>
+  <!-- 讲显示载入页面需要的最少资源抽离出来，以便第一时间能够展示，其他的资源移到最后 -->
+  <script>
+    // pace.js 的设置，详情见 https://github.hubspot.com/pace/docs/welcome/
+    paceOptions = {
+      ajax: false,
+      restartOnPushState: false,
+      restartOnRequestAfter: false
+    }
+  </script>
+  <link rel="stylesheet" href="style/initstyle.css"> 
+  <script src="script/pace.min.js"></script>
+
 </head>
+
 <body>
-    
+  <nav>
+    <div class="container is-fluid">
+      <a id="menu-button" class="reversed">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
+    </div>
+    <div class="menu-container text-black">
+      <ul>
+        <li><a class="is-active" href="#">homepage</a></li>
+        <li><a href="#">works</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">group</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+    <!-- trigger1 元素用来配合 scrollmagic 确定滚动的位置，以确定讲菜单按钮变色的时机 -->
+    <div id="trigger1"></div>
+    <header class="hero is-fullheight">
+      <div class="container is-fluid logo-container">
+        <a class="logo" href="/"><span class="mdi mdi-diamond-stone" style="
+                font-size: 48px; color: #EEECED;"></span></a>
+      </div>
+      <div class="hero-body">
+        <div class="container is-fluid">
+          <h1 class="mytitle">
+            <span>GDG</span>
+          </h1>
+          <p class="mysubtitle">Google Developer Group</p>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <a href="#product1" class="scroll-down"><span class="mdi mdi-chevron-down"></span></a>
+      </div>
+    </header>
+
+    <section id="product1" class="product font-song margin-section">
+      <div class="columns">
+        <div class="column desc">
+          <div class="mycard">
+            <h3>GDG</h3>
+            <hr>
+            <p class="mysubtitle">
+              GDG suzhou
+            </p>
+          </div>
+        </div>
+        <div class="column is-three-fifths">
+          <figure class="img-wrapper">
+            <a href="/"><img src="./media/image/edho-pratama.jpg" alt="" srcset=""></a>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="product font-song">
+      <div class="columns">
+        <div class="column is-three-fifths">
+          <figure class="img-wrapper">
+            <a href="/"><img src="./media/image/ancient-architecture-building.jpg" alt="" srcset=""></a>
+          </figure>
+        </div>
+        <div class="column desc">
+          <div class="mycard">
+            <h3 class="">website</h3>
+            <hr>
+            <p class="mysubtitle">
+              my website
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product font-song margin-section">
+      <div class="columns">
+        <div class="column desc">
+          <div class="mycard">
+            <h3>suzhou</h3>
+            <hr>
+            <p class="mysubtitle">
+              china
+            </p>
+          </div>
+        </div>
+        <div class="column is-three-fifths">
+          <figure class="img-wrapper">
+            <a href="/"><img src="./media/image/roman.jpg" alt="" srcset=""></a>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="product font-song">
+      <div class="columns">
+        <div class="column is-three-fifths">
+          <figure class="img-wrapper">
+            <a href="/"><img src="./media/image/bee.jpg" alt="" srcset=""></a>
+          </figure>
+        </div>
+        <div class="column desc">
+          <div class="mycard">
+            <h3>2019</h3>
+            <hr>
+            <p class="mysubtitle">
+              year
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer id="footer" data-aos="fade">
+    <div class="content">
+      <div class="columns">
+        <div class="column">
+          <h4><i class="fa fa-phone"></i>Tel</h4>
+          <p>188XXXXXX</p>
+        </div>
+        <div class="column">
+          <h4><i class="fa fa-map-marker"></i>address</h4>
+          <p>#3481<br>suhzou</p>
+        </div>
+        <div class="column">
+          <h4><i class="fa fa-envelope"></i>email</h4>
+          <p><a href="mailto:mail@example.com">mail@example.com</a></p>
+        </div>
+      </div>
+      <div class="social">
+        <ul>
+          <li><a href=""><i class="fab fa-github fa-2x"></i></a></li>
+          <li>
+            <a href=""><i class="fab fa-weibo fa-2x"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-weixin fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2019 GDG</p>
+      </div>
+    </div>
+  </footer>
+  <link rel="stylesheet" href="style/bulma/css/bulma.css">
+  <link rel="stylesheet" href="style/mdi/css/materialdesignicons.min.css">
+
+  <link rel="stylesheet" href="style/style.css">
+  <script src="script/TweenMax.min.js"></script>
+  <script src="script/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script src="script/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+  <script src="script/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+  <script src="script/app.js"></script>
 </body>
-<script>
-    window.location.href = './after/index.html';
-</script>
+
 </html>
