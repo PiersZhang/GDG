@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0}
+        
+        .line-wrap{
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+        .line{
+            width: 70px;
+            height: 5px;
+            background: #000;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .line1{
+            transform: translateY(15px) rotate(45deg);
+        }
+        .line2{
+            /* display: none; */
+            /* visibility: hidden; */
+            /* background: #fff; */
+            opacity: 0;
+        }
+        .line3{
+            transform: translateY(-15px) rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="line-wrap">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <script>
+        var aLine = document.querySelectorAll('.line');
+
+        for(var i =0 ; i<3; i++){
+            aLine[i].style.background='red';
+        }
+        // alert(i);
+        // aLine[0].style.background='red';
+        // aLine[1].style.background='pink';
+        // aLine[2].style.background='gray';
+    </script>
+</body>
+</html>

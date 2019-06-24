@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: 1s all ease; 
+        }
+        .divMove{
+            transform: translateX(100px) rotate(360deg) scale(5);
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">DIV</div>
+
+    <script>
+        var oDiv = document.getElementById('div1')
+
+        oDiv.onclick = function (){
+            this.className='divMove';
+        }
+    </script>
+</body>
+</html>

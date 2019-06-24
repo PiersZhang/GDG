@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0}
+        
+        .line-wrap{
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+        .line{
+            width: 70px;
+            height: 5px;
+            background: #000;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: .5s all ease;
+        }
+        .line0line{
+            transform: translateY(15px) rotate(45deg);
+            background: #f60;
+        }
+        .line1line{
+            /* display: none; */
+            /* visibility: hidden; */
+            /* background: #fff; */
+            opacity: 0;
+            background: #f60;
+        }
+        .line2line{
+            transform: translateY(-15px) rotate(-45deg);
+            background: #f60;
+        }
+    </style>
+</head>
+<body>
+    <div class="line-wrap">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <script>
+        var oLineWrap = document.querySelector('.line-wrap');
+        var aLine = document.querySelectorAll('.line');
+
+        oLineWrap.onclick = function (){
+            for(var i =0 ; i<3; i++){
+                aLine[i].className='line line'+i+'line';
+                // aLine[0].className='line line0';
+                // aLine[1].className='line line1';
+                // aLine[2].className='line line2';
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

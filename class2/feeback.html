@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>反馈意见</title>
+    <style>
+        #container {
+            width: 600px;
+            border: 1px solid green;
+            border-radius: 5px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        label {
+            width: 100px;
+            display: inline-block;
+        }
+
+        #btn-submit {
+            background-color: blue;
+            color: white;
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #content {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h3>反馈表单</h3>
+        <label for="realname">姓名:</label>
+        <input type="text" id="realname" name="realname" />
+        <br />
+        <br />
+        <label for="sex">性别:</label>
+        <select id="sex" name="sex">
+            <option>男</option>
+            <option>女</option>
+        </select>
+
+        <br />
+        <br />
+        <label for="age">
+            年龄：
+        </label>
+        <input type="number" id="age" name="age" />
+        <br />
+        <br />
+        <label for="phone">手机:</label>
+        <input type="text" id="phone" name="phone">
+        <br />
+        <br />
+        <label for="email">邮箱:</label>
+        <input type="text" id="email" name="email">
+        <br />
+        <br />
+        <label for="content">内容：</label>
+        <textarea id="content" name="content" rows="5">
+        </textarea>
+        <br />
+        <br />
+
+        <div>
+            <input type="radio" id="male" name="sex" value="male" checked>
+            <label for="male">男</label>
+        </div>
+
+        <div>
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="female">女</label>
+        </div>
+
+   
+
+
+        <button  id="btn-submit" class="btn button">发送</button>
+    </div>
+    <script>
+        function sayHello() {
+
+        }
+        var result = {};
+        //姓名
+        debugger;
+
+
+        function checkAge(ageValue){
+            var age=parseInt(ageValue);
+            if(age>150||age<0){
+                return "年龄范围不合法";
+            }else{
+                return "年龄范围合法"
+            }
+        }
+        var inputAge=document.getElementById("age");
+        inputAge.addEventListener("change",function(event){
+            var ageValue=event.target.value;
+    
+            alert(checkAge(ageValue));
+        });
+
+        function checkEmail(emailValue){
+            if(emailValue.toString().indexOf("@")>-1){
+                return "邮箱合法"
+            }else{
+                return "邮箱不合法"
+            }
+        }
+
+        var inputEmail=document.getElementById("email");
+        inputEmail.addEventListener("change",function(event){
+            var emailValue=event.target.value;
+            alert(checkEmail(emailValue));
+        });
+
+
+        var btnSubmit = document.getElementById("btn-submit");
+        btnSubmit.addEventListener("click", function () {
+            var realname = document.getElementById("realname").value;
+            alert(realname);
+        })
+
+    </script>
+</body>
+
+</html>

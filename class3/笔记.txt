@@ -1,0 +1,54 @@
+Manis(穿山甲)老肖
+
+PS -> canvas
+
+前端
+
+HTML ->  骨架
+CSS -> 修饰、装饰
+JS -> 功能
+
+人:
+	搬砖
+	思想
+modals(弹框)
+	1. 三个杠 -> X
+		替换
+	2. 让一个东西看不见:
+		none  :  消失，位置丢
+		visbility: 消失，位置还在
+	3. 旋转
+		transform:translate  平移
+			   rotate(10deg)
+
+		transform: 第一个值 第二个值
+	4. 运动
+		transition:时间 运动形式 哪个值运动 ;
+		
+		transition:1s all ease;
+
+	2. n
+		0 1 2 3 4 5 6......
+
+          	   bSign = true;
+		   false
+
+
+tabs(选项卡)
+slider(轮播图)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

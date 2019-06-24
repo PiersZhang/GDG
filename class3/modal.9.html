@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0}
+
+        body{
+            height: 100vh;
+        }
+        .bg{
+            width: 100%;
+            height: 100%;
+            background:url(https://hbimg.huabanimg.com/c3e7c5979d5df63695b3d8830e0d06bfcb13f8094c315-nGzHpD_fw658) no-repeat;
+            background-size: cover;
+        }
+        .bgBlur{
+            filter:blur(10px);
+        }
+        .line-wrap{
+            position: absolute;
+            right: 3em;
+            top: 3em;
+            z-index: 10;
+        }
+        .line{
+            width: 70px;
+            height: 5px;
+            background: #fff;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: .5s all ease;
+        }
+        .line0line{
+            transform: translateY(15px) rotate(45deg);
+            background: #f60;
+        }
+        .line1line{
+            opacity: 0;
+            background: #f60;
+        }
+        .line2line{
+            transform: translateY(-15px) rotate(-45deg);
+            background: #f60;
+        }
+
+        .modal{
+            box-sizing: border-box;
+            padding-top: 200px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 9;
+            width: 0;
+            height: 0;
+            background: rgba(0,0,0,.5);
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+
+    <div class="modal">
+        GDG-SZ
+    </div>
+
+    <div class="line-wrap">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+   
+    
+</body>
+</html>

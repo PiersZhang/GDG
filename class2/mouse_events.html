@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鼠标事件</title>
+</head>
+
+<body>
+    <button id="btn-click">Click Me</button>
+
+    <select size="1" onchange="changeEventHandler(event);">
+        <option>苏州GDG</option>
+        <option>上海GDG</option>
+        <option>杭州GDG</option>
+    </select>
+    
+    <script>
+        var button = document.getElementById("btn-click");
+        button.addEventListener("click", function () {
+            alert("我被点击了。");
+        });
+
+        function changeEventHandler(event) {
+            console.log(event.target.value);
+        }
+
+    </script>
+</body>
+
+</html>
