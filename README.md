@@ -14,11 +14,11 @@
 1、class2 文件夹中的feeback.html、helloworld.html、mouse_event.html都是课上的例子
 2、[课程内容参考](https://note.youdao.com/ynoteshare1/index.html?id=df05d5a672ef4f957e512334e18d7853&type=note)
 
-#class3
+# class3
 #### 注意
 1、class3文件夹中的所有html都是课上的实际小例子
 
-#class4
+# class4
 #### 联系
 1、my-company文件夹中的index.before.html 是你需要修改的代码，修改后的效果应该和改文件夹下的index.html相同
 2、reponsivedeml文件夹中的responsive.before.html 是你需要修改的代码，修改后的效果应该和改文件夹下的index.html相同
