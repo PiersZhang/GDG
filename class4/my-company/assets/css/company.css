@@ -1,0 +1,290 @@
+
+hr.colored {
+  border-top: 1px solid #ef4035;
+  border-bottom: 1px solid #ef4035;
+  height: 4px;
+  background-color: unset;
+  width: 200px;
+  margin: 20px auto;
+}
+/* header */
+
+header {
+  background-image: url(../img/bg-header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+header .navbar-burger {
+  color: #ddd;
+}
+header .navbar-menu {
+  background-color: transparent;
+}
+header a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+  background-color: transparent;
+}
+header .logo {
+  font-size: 1.5rem;
+  padding: 0 .5rem;
+  color: rgba(255, 255, 255, 0.8)
+}
+header a.navbar-item, header a.navbar-item.is-active {
+  color: white;
+}
+
+header a.navbar-item:hover, header a.navbar-item.is-active:hover {
+  color: white;
+  background-color: black;
+}
+
+header .title {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: 1rem auto;
+}
+
+header .subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+}
+header figure {
+  width: 150px;
+  margin: 0 auto;
+}
+header .logo-img {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+header .hero-foot {
+  text-align: center;
+}
+
+header .hero-foot a{
+  color: white;
+}
+@media screen and (min-width: 769px) {
+  header .title {
+    font-size: 5rem;
+  }
+  header .logo-img {
+    width: 250px;
+  }
+  header {
+    background-attachment: fixed;
+  }
+}
+
+.section {
+  padding: 6rem 1.5rem;
+}
+
+.section h2.title {
+  font-size: 3rem;
+  font-weight: normal;
+}
+.section .subtitle {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.section h3 {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
+.section .columns {
+  margin: 3rem auto;
+}
+/* service */
+#service {
+  text-align: center;
+}
+
+/* team */
+#team {
+  text-align: center;
+  background-color: #f5f5f5;
+}
+#team .item {
+  position: relative;
+  padding: 1rem;
+}
+#team .swiper-button-prev {
+  left: 1rem;
+}
+#team .swiper-button-next {
+  right: 1rem;
+}
+#team .item .caption{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#team .item .caption a{ 
+  color: rgba(255, 255, 255, 0.7);
+}
+#team .item .caption h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+#team .item .caption hr {
+  margin: 5px auto;
+  max-width: 3rem;
+}
+#team .item .caption ul {
+  display: flex;
+  justify-content: center;
+}
+
+#team .item .caption ul li {
+  padding: 0 .7rem;
+}
+
+/* quote */
+section.quote {
+  text-align: center;
+  background-image: url(../img/bg-aside.jpg);
+  background-position: center;
+  background-size: cover;
+
+  color: white;
+}
+section.quote p {
+  font-size: 2.5rem;
+}
+section.quote a.button {
+  background-color: unset;
+  color: white;
+  padding: .6rem 1.5rem;
+  border-radius: 0;
+  height: unset;
+}
+section.quote a.button:hover {
+  background-color: white;
+  color: #ef4035;
+}
+section.quote .text-primary {
+  color: #ef4035;
+}
+@media screen and (min-width: 769px) {
+  section.quote {
+    background-attachment: fixed;
+  }
+}
+/* project */
+#project {
+  text-align: center;
+}
+
+#project .proj {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#project .proj img{
+  display: block;
+  width: 100%;
+  filter: grayscale(0);
+  transition: all .2s;
+}
+#project .proj .caption {
+  position: absolute;
+  top: 100%;
+  background-color: #ef4035;
+  color: white;
+  width: 100%;
+  padding: .75rem 0;
+  transition: all .2s;
+}
+#project .proj .caption h3 {
+  font-size: 1rem;
+  margin: 0 auto;
+}
+#project .proj .text-category {
+  font-size: .75rem;
+}
+#project .proj:hover .caption {
+  transform: translateY(-100%);
+}
+#project .proj:hover img {
+  filter: grayscale(1);
+  transform: translateY(-10px);
+}
+/* footer */
+footer {
+  text-align: center;
+  background-image: url(../img/creative/bg-aside.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 1.5rem 3rem 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+}
+footer .content h4 {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer a:hover {
+  color: #ef4035;
+}
+footer .social {
+  margin: 5rem auto;
+}
+footer .social ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+footer .social ul > li {
+  padding: 0 .8rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 769px) {
+  footer {
+    background-attachment: fixed;
+  }
+}
+
+.modal {
+  color: white;
+  text-align: center;
+}
+.is-large.delete, .is-large.modal-close {
+  height: 96px;
+  max-height: 96px;
+  max-width: 96px;
+  min-height: 96px;
+  min-width: 96px;
+  width: 96px;
+}
+.modal h2 {
+  font-size: 3rem;
+}
+
+.modal .modal-content {
+  width: 100%;
+  padding: 5rem 3rem;
+}
+
+.modal-background {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/portfolio/bg-2.jpg")
+}
