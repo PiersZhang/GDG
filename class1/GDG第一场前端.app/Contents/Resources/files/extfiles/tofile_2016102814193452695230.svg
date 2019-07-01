@@ -1,0 +1,9 @@
+<svg version="1.1" x="0" y="0" width="100%" height="100%" viewBox="0,0,0.004402261593039355,0.004402261593039355" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="linear" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1;"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1;"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="0.0022011307965196774" cy="0.0022011307965196774" rx="0.0021867558780434707" ry="0.0021867558780434707" style="stroke:#ffffff;stroke-width:0.00002874983695241338;stroke-opacity:0;fill:url(#linear);"/>
+</svg>

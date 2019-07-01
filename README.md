@@ -8,6 +8,7 @@
 + media文件夹中有联系过程中用到的所有
 + style文件夹中的style.css在index.html中有引用到，是index.html的所有样式；
 + style文件夹中的bulma文件夹中是bluma的样式源码，也在index.html中有用到来实现一些全屏效果
++ [课上内容参考](https://www.jianshu.com/p/09eaf25ae88e)
 
 # class2
 #### 注意
